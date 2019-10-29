@@ -10,13 +10,13 @@
 .primary-l {
   color: lighten($color-primary, $lighten-num);
 }
-.primary-bg {
+.bg-primary {
   background-color: $color-primary;
 }
-.primary-bgd {
+.bgd-primary {
   background-color: darken($color-primary, $darken-num);
 }
-.primary-bgl {
+.bgl-primary {
   background-color: lighten($color-primary, $lighten-num);
 }
 /********************** dark **********************/
@@ -29,13 +29,13 @@
 .dark-l {
   color: lighten($color-dark, $lighten-num);
 }
-.dark-bg {
+.bg-dark {
   background-color: $color-dark;
 }
-.dark-bgd {
+.bgd-dark {
   background-color: darken($color-dark, $darken-num);
 }
-.dark-bgl {
+.bgl-dark {
   background-color: lighten($color-dark, $lighten-num);
 }
 
@@ -50,13 +50,13 @@
 .success-l {
   color: lighten($color-success, $lighten-num);
 }
-.success-bg {
+.bg-success {
   background-color: $color-success;
 }
-.success-bgd {
+.bgd-success {
   background-color: darken($color-success, $darken-num);
 }
-.success-bgl {
+.bgl-success {
   background-color: lighten($color-success, $lighten-num);
 }
 /********************** danger **********************/
@@ -69,13 +69,13 @@
 .danger-l {
   color: lighten($color-danger, $lighten-num);
 }
-.danger-bg {
+.bg-danger {
   background-color: $color-danger;
 }
-.danger-bgd {
+.bgd-danger {
   background-color: darken($color-danger, $darken-num);
 }
-.danger-bgl {
+.bgl-danger {
   background-color: lighten($color-danger, $lighten-num);
 }
 /********************** warn **********************/
@@ -88,13 +88,13 @@
 .warn-l {
   color: lighten($color-warn, $lighten-num);
 }
-.warn-bg {
+.bg-warn {
   background-color: $color-warn;
 }
-.warn-bgd {
+.bgd-warn {
   background-color: darken($color-warn, $darken-num);
 }
-.warn-bgl {
+.bgl-warn {
   background-color: lighten($color-warn, $lighten-num);
 }
 /********************** light **********************/
@@ -107,13 +107,13 @@
 .light-l {
   color: lighten($color-light, $lighten-num);
 }
-.light-bg {
+.bg-light {
   background-color: $color-light;
 }
-.light-bgd {
+.bgd-light {
   background-color: darken($color-light, $darken-num);
 }
-.light-bgl {
+.bgl-light {
   background-color: lighten($color-light, $lighten-num);
 }
 /********************** white **********************/
@@ -124,10 +124,10 @@
   color: darken($color-white, $darken-num);
 }
 
-.white-bg {
+.bg-white {
   background-color: $color-white;
 }
-.white-bgd {
+.bgl-white {
   background-color: darken($color-white, $darken-num);
 }
 
@@ -150,9 +150,9 @@
 
 /********************** 背景色 **********************/
 // 页面颜色
-.page-bg {
+.bg-page {
   background-color: $color-bg-page;
 }
-.body-bg {
+.bg-body {
   background-color: $color-bg-body;
 }
