@@ -32,6 +32,16 @@ $lighten-num: 10%;
 $darken-num: 10%;
 ```
 
+## 详细用法
+
+- [变量](./scss/variable.scss)
+- [布局](./scss/layout.scss)
+- [响应式](./scss/col.scss)
+- [颜色](./scss/colors.scss)
+- [字体](./scss/text.scss)
+- [边框](./scss/border.scss)
+- [工具](./scss/tools.scss)
+
 ## 颜色
 
 颜色区分 `字体颜色` 和 `背景色`

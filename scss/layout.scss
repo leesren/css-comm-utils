@@ -105,10 +105,14 @@
 .block {
   display: block;
 }
-
+.inline {
+  display: inline;
+}
+.none,
 .hide {
   display: none;
 }
+
 /********************** 清除浮动 **********************/
 .clearfix:after {
   display: table;
@@ -204,6 +208,9 @@
 }
 .float-r {
   float: right;
+}
+.float-n {
+  float: none;
 }
 
 /********************** pading & margin **********************/

@@ -108,16 +108,13 @@
   writing-mode: vertical-lr;
   unicode-bidi: bidi-override;
 }
-.tx-line-t {
+/********************** text-decoration **********************/
+.tx-dlt {
   text-decoration: line-through;
+}
+.tx-dul {
+  text-decoration: underline;
 }
 
 // 字体大小
 @include font-size();
-.tx-ac {
-  &::before {
-    display: inline-block;
-    vertical-align: middle;
-    content: '';
-  }
-}
