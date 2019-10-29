@@ -1,0 +1,182 @@
+@import './variable.scss';
+@mixin p($v, $n: 0) {
+  @if $v== 't' {
+    padding-top: $n;
+  } @else if $v== 'r' {
+    padding-right: $n;
+  } @else if $v== 'b' {
+    padding-bottom: $n;
+  } @else if $v== 'l' {
+    padding-left: $n;
+  } @else if $v == 'tb' {
+    padding-top: $n;
+    padding-bottom: $n;
+  } @else if $v == 'lr' {
+    padding-left: $n;
+    padding-right: $n;
+  } @else {
+    padding: $v;
+  }
+}
+
+@mixin m($v, $n: 0) {
+  @if $v == 't' {
+    margin-top: $n;
+  } @else if $v== 'r' {
+    margin-right: $n;
+  } @else if $v== 'b' {
+    margin-bottom: $n;
+  } @else if $v== 'l' {
+    margin-left: $n;
+  } @else if $v == 'tb' {
+    margin-top: $n;
+    margin-bottom: $n;
+  } @else if $v == 'lr' {
+    margin-left: $n;
+    margin-right: $n;
+  } @else {
+    margin: $v;
+  }
+}
+@mixin font-size() {
+  @for $i from $font-size-start through $font-size-end {
+    .fs#{$i} {
+      font-size: 0px + $i;
+    }
+  }
+}
+@mixin gap($v, $n: 0) {
+  .p#{$v} {
+    @include p($n);
+  }
+  .pt#{$v} {
+    @include p('t', $n);
+  }
+  .pr#{$v} {
+    @include p('r', $n);
+  }
+  .pb#{$v} {
+    @include p('b', $n);
+  }
+  .pl#{$v} {
+    @include p('l', $n);
+  }
+  .plr#{$v} {
+    @include p('lr', $n);
+  }
+  .ptb#{$v} {
+    @include p('tb', $n);
+  }
+
+  .m#{$v} {
+    @include m($n);
+  }
+  .mt#{$v} {
+    @include m('t', $n);
+  }
+  .mr#{$v} {
+    @include m('r', $n);
+  }
+  .mb#{$v} {
+    @include m('b', $n);
+  }
+  .ml#{$v} {
+    @include m('l', $n);
+  }
+  .mlr#{$v} {
+    @include m('lr', $n);
+  }
+  .mtb#{$v} {
+    @include m('tb', $n);
+  }
+}
+@mixin gapV($v, $num: 0) {
+  $n: $num * $bh * 1vh;
+  .p#{$v} {
+    @include p($n);
+  }
+  .pt#{$v} {
+    @include p('t', $n);
+  }
+  .pr#{$v} {
+    @include p('r', $n);
+  }
+  .pb#{$v} {
+    @include p('b', $n);
+  }
+  .pl#{$v} {
+    @include p('l', $n);
+  }
+  .plr#{$v} {
+    @include p('lr', $n);
+  }
+  .ptb#{$v} {
+    @include p('tb', $n);
+  }
+
+  .m#{$v} {
+    @include m($n);
+  }
+  .mt#{$v} {
+    @include m('t', $n);
+  }
+  .mr#{$v} {
+    @include m('r', $n);
+  }
+  .mb#{$v} {
+    @include m('b', $n);
+  }
+  .ml#{$v} {
+    @include m('l', $n);
+  }
+  .mlr#{$v} {
+    @include m('lr', $n);
+  }
+  .mtb#{$v} {
+    @include m('tb', $n);
+  }
+}
+@mixin flex() {
+  @for $i from 1 through 18 {
+    .flex#{$i} {
+      flex: $i;
+    }
+  }
+}
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+  :-moz-placeholder {
+    @content;
+  }
+  ::-moz-placeholder {
+    @content;
+  }
+  :-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin list-row-lr($num, $row-gap) {
+  .list-row-lr {
+    margin-left: -$row-gap;
+    .row-item {
+      width: $num;
+      box-sizing: border-box;
+      float: left;
+      padding-left: $row-gap;
+    }
+  }
+}
+
+@mixin col-list($v: 24) {
+  @for $i from 0 through 24 {
+    .el-col-#{$i} {
+      width: $i / 24 * 100%;
+    }
+  }
+}
+@mixin px2vh($v: 0) {
+  height: $v * $bh * 1vh;
+}

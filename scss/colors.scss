@@ -1,0 +1,158 @@
+@import './variable';
+
+/********************** primary **********************/
+.primary {
+  color: $color-primary;
+}
+.primary-d {
+  color: darken($color-primary, $darken-num);
+}
+.primary-l {
+  color: lighten($color-primary, $lighten-num);
+}
+.primary-bg {
+  background-color: $color-primary;
+}
+.primary-bgd {
+  background-color: darken($color-primary, $darken-num);
+}
+.primary-bgl {
+  background-color: lighten($color-primary, $lighten-num);
+}
+/********************** dark **********************/
+.dark {
+  color: $color-dark;
+}
+.dark-d {
+  color: darken($color-dark, $darken-num);
+}
+.dark-l {
+  color: lighten($color-dark, $lighten-num);
+}
+.dark-bg {
+  background-color: $color-dark;
+}
+.dark-bgd {
+  background-color: darken($color-dark, $darken-num);
+}
+.dark-bgl {
+  background-color: lighten($color-dark, $lighten-num);
+}
+
+/********************** success **********************/
+
+.success {
+  color: $color-success;
+}
+.success-d {
+  color: darken($color-success, $darken-num);
+}
+.success-l {
+  color: lighten($color-success, $lighten-num);
+}
+.success-bg {
+  background-color: $color-success;
+}
+.success-bgd {
+  background-color: darken($color-success, $darken-num);
+}
+.success-bgl {
+  background-color: lighten($color-success, $lighten-num);
+}
+/********************** danger **********************/
+.danger {
+  color: $color-danger;
+}
+.danger-d {
+  color: darken($color-danger, $darken-num);
+}
+.danger-l {
+  color: lighten($color-danger, $lighten-num);
+}
+.danger-bg {
+  background-color: $color-danger;
+}
+.danger-bgd {
+  background-color: darken($color-danger, $darken-num);
+}
+.danger-bgl {
+  background-color: lighten($color-danger, $lighten-num);
+}
+/********************** warn **********************/
+.warn {
+  color: $color-warn;
+}
+.warn-d {
+  color: darken($color-warn, $darken-num);
+}
+.warn-l {
+  color: lighten($color-warn, $lighten-num);
+}
+.warn-bg {
+  background-color: $color-warn;
+}
+.warn-bgd {
+  background-color: darken($color-warn, $darken-num);
+}
+.warn-bgl {
+  background-color: lighten($color-warn, $lighten-num);
+}
+/********************** light **********************/
+.light {
+  color: $color-light;
+}
+.light-d {
+  color: darken($color-light, $darken-num);
+}
+.light-l {
+  color: lighten($color-light, $lighten-num);
+}
+.light-bg {
+  background-color: $color-light;
+}
+.light-bgd {
+  background-color: darken($color-light, $darken-num);
+}
+.light-bgl {
+  background-color: lighten($color-light, $lighten-num);
+}
+/********************** white **********************/
+.white {
+  color: $color-white;
+}
+.white-d {
+  color: darken($color-white, $darken-num);
+}
+
+.white-bg {
+  background-color: $color-white;
+}
+.white-bgd {
+  background-color: darken($color-white, $darken-num);
+}
+
+// 文本颜色
+.tx-pc {
+  color: $tx-pc;
+}
+
+.tx-rc {
+  color: $tx-rc;
+}
+
+.tx-sc {
+  color: $tx-sc;
+}
+
+.tx-hc {
+  color: $tx-hc;
+}
+
+/********************** 背景色 **********************/
+// 页面颜色
+.page-bg {
+  background-color: $color-bg-page;
+}
+.body-bg {
+  background-color: $color-bg-body;
+}

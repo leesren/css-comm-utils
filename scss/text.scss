@@ -1,0 +1,123 @@
+@import './mixins';
+@mixin boxori() {
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+}
+@mixin ui-nowrap-multi($v) {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @include boxori();
+  -webkit-line-clamp: $v;
+}
+
+.ui-nowrap-flex {
+  display: -webkit-box;
+  overflow: hidden;
+  @include boxori();
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+}
+/********************** 文本溢出隐藏 **********************/
+// 2 行隐藏
+.tx-hi2 {
+  display: -webkit-box;
+  @include boxori();
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}
+// 单行隐藏
+.tx-hi1 {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+}
+.tx-hi {
+  display: -webkit-box;
+  @include boxori();
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+}
+/********************** 文本加粗 **********************/
+.bold {
+  font-weight: bold;
+}
+.fw300 {
+  font-weight: 300;
+}
+.fw400 {
+  font-weight: 400;
+}
+.fw600 {
+  font-weight: 600;
+}
+.fw800 {
+  font-weight: 800;
+}
+
+// 利用伪元素的方式，让子元素实现垂直居中
+.vam-box {
+  &:after {
+    display: inline-block;
+    content: '';
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/********************** text-align **********************/
+.tx-c {
+  text-align: center;
+}
+.tx-r {
+  text-align: right;
+}
+.tx-l {
+  text-align: left;
+}
+.tx-j {
+  text-align: justify;
+}
+/********************** vertical-align **********************/
+.tx-vm {
+  vertical-align: middle;
+}
+.tx-vt {
+  vertical-align: top;
+}
+
+.tx-vb {
+  vertical-align: bottom;
+}
+
+.text-align-v {
+  /*文字数字排列*/
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  unicode-bidi: bidi-override;
+}
+.tx-line-t {
+  text-decoration: line-through;
+}
+
+// 字体大小
+@include font-size();
+.tx-ac {
+  &::before {
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+  }
+}

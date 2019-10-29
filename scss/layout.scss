@@ -1,0 +1,220 @@
+@import './mixins';
+@import './variable';
+@import './col';
+
+/********************** display: flex **********************/
+.fbox {
+  display: flex;
+}
+// 垂直方向
+.fbox-h {
+  display: flex;
+  flex-direction: row;
+}
+// 垂直居中
+.fbox-vc {
+  display: flex;
+  align-items: center;
+}
+// 水平垂直居中
+.fbox-hvc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// 垂直方向
+.fbox-v {
+  display: flex;
+  flex-direction: column;
+}
+
+// 垂直 垂直居中
+.fbox-v-vc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+// 垂直 垂直水平居中
+.fbox-v-vhc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-vc {
+  align-items: center;
+}
+.flex-hc {
+  justify-content: center;
+}
+.flex-hvc {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+// between
+.flex-hb {
+  justify-content: space-between;
+}
+// around
+.flex-ha {
+  justify-content: space-around;
+}
+// end
+.flex-he {
+  justify-content: flex-end;
+}
+
+//  align-items: flex-start;
+.flex-vs {
+  align-items: flex-start;
+}
+.flex-ve {
+  align-items: flex-end;
+}
+// stretch
+.flex-vt {
+  align-items: stretch;
+}
+// align-self
+.self-start {
+  align-self: flex-start;
+}
+.self-end {
+  align-self: flex-end;
+}
+
+.flex {
+  flex: 1;
+}
+@include flex();
+
+/********************** block **********************/
+.block-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inblock {
+  display: inline-block;
+}
+.block {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+/********************** 清除浮动 **********************/
+.clearfix:after {
+  display: table;
+  content: ' ';
+  clear: both;
+  line-height: 0;
+}
+
+/********************** overflow **********************/
+.over-hi {
+  overflow: hidden;
+}
+.over-hiy {
+  overflow-y: hidden;
+}
+.over-hix {
+  overflow-x: hidden;
+}
+.over-auto {
+  overflow: auto;
+}
+.over-sy {
+  overflow-y: auto;
+}
+.over-sx {
+  overflow-x: auto;
+}
+.over-smooth {
+  -webkit-overflow-scrolling: touch;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/********************** 定位 **********************/
+.posi-re {
+  position: relative;
+}
+// 绝对
+.posi-ab {
+  position: absolute;
+}
+// fixed
+.posi-fx {
+  position: fixed;
+}
+/*static*/
+.posi-st {
+  position: static;
+}
+/*固定定位*/
+.posi-sk {
+  position: sticky;
+}
+/********************** 定位居中 **********************/
+.posi-hc {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.posi-vc {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.posi-hvc {
+  top: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/********************** background-size **********************/
+.bg-sico {
+  background-size: cover;
+}
+.bg-sict {
+  background-size: contain;
+}
+/********************** visibility **********************/
+.visi-hide,
+.invisi {
+  visibility: hidden;
+}
+.visi {
+  visibility: visible;
+}
+/********************** 响应式 **********************/
+@include col-list();
+
+/********************** pading & margin **********************/
+@include gap('50', 50px);
+@include gap('45', 45px);
+@include gap('40', 40px);
+@include gap('35', 35px);
+@include gap('32', 32px);
+@include gap('30', 30px);
+@include gap('28', 28px);
+@include gap('25', 25px);
+@include gap('23', 23px);
+@include gap('20', 20px);
+@include gap('18', 18px);
+@include gap('15', 15px);
+@include gap('12', 12px);
+@include gap('10', 10px);
+@include gap('8', 8px);
+@include gap('5', 5px);
+@include gap('4', 4px);
+@include gap('3', 3px);
+@include gap('2', 2px);
+@include gap('0', 0);

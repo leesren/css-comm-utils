@@ -1,0 +1,94 @@
+@import 'variable';
+
+.after {
+  content: '';
+  position: absolute;
+  transform: scaleY(0.5);
+  pointer-events: none;
+  box-sizing: border-box;
+  background-color: $color-border;
+  height: 1px;
+}
+/********************** 移动端 1px **********************/
+.bor-mt {
+  position: relative;
+  &::before {
+    @extend .after;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.bor-mr {
+  position: relative;
+  &::before {
+    @extend .after;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+.bor-ml {
+  position: relative;
+  &::before {
+    @extend .after;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+}
+.bor-mb {
+  position: relative;
+  &::before {
+    @extend .after;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+.bor-mtb {
+  position: relative;
+  &::before {
+    @extend .after;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  &::after {
+    @extend .after;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+/********************** border 1px **********************/
+.bor {
+  border: 1px solid $color-border;
+}
+.bor-t {
+  border-top: 1px solid $color-border;
+}
+.bor-r {
+  border-right: 1px solid $color-border;
+}
+.bor-b {
+  border-bottom: 1px solid $color-border;
+}
+.bor-l {
+  border-left: 1px solid $color-border;
+}
+/********************** border radius **********************/
+
+.bor-ra4 {
+  border-radius: 4px;
+}
+.bor-ra6 {
+  border-radius: 6px;
+}
+.bor-ra8 {
+  border-radius: 8px;
+}
+.rounded {
+  border-radius: 50%;
+}
