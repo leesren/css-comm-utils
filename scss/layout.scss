@@ -212,6 +212,20 @@
 .float-n {
   float: none;
 }
+/********************** box-sizing **********************/
+
+.box-sibo {
+  box-sizing: border-box;
+}
+.box-sico {
+  box-sizing: content-box;
+}
+.box-siin {
+  box-sizing: initial;
+}
+.box-siun {
+  box-sizing: unset;
+}
 
 /********************** pading & margin **********************/
 @include gap('50', 50px);
