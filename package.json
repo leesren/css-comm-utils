@@ -1,6 +1,6 @@
 {
   "name": "css-comm-utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "css base utils style",
   "main": "scss/index.scss",
   "scripts": {
