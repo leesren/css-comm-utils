@@ -11,8 +11,8 @@
     "comm",
     "class"
   ],
-  "homepage": "git remote add origin https://github.com/leesren/css-comm-utils",
-  "bugs": "git remote add origin https://github.com/leesren/css-comm-utils/issues",
+  "homepage": "https://github.com/leesren/css-comm-utils",
+  "bugs": "https://github.com/leesren/css-comm-utils/issues",
   "author": "leesren@foxmail.com",
   "license": "ISC"
 }
