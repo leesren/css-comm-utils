@@ -1,0 +1,18 @@
+{
+  "name": "css-comm-utils",
+  "version": "1.0.2",
+  "description": "css base utils style",
+  "main": "scss/index.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "comm",
+    "class"
+  ],
+  "homepage": "git remote add origin https://github.com/leesren/css-comm-utils",
+  "bugs": "git remote add origin https://github.com/leesren/css-comm-utils/issues",
+  "author": "leesren@foxmail.com",
+  "license": "ISC"
+}
